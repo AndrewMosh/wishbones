@@ -1,3 +1,51 @@
 .main {
-    background-color: rgb(184, 184, 184);
+    padding: 0;
+    background-color: $bgColor1;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+
+        @include for-tablet {
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+
+    &__content,
+    &__image {
+        flex: 0 0 50%;
+    }
+
+    &__image {
+        flex: 0 0 58%;
+    }
+
+    &__logo {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 2px;
+        text-align: left;
+        text-transform: uppercase;
+        padding: 10px;
+    }
+
+    &__title {
+        font-size: 64px;
+        line-height: 70.4px;
+        letter-spacing: 0%;
+        text-align: left;
+        padding: 10px;
+        color: $black;
+        max-width: 417px;
+    }
+
+    &__text {
+        max-width: 509px;
+        font-size: 16px;
+        padding: 10px;
+    }
 }
