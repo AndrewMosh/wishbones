@@ -5,6 +5,11 @@
     &__wrapper {
         display: flex;
         align-items: center;
+
+        @include for-tablet {
+            flex-direction: column;
+            gap: 20px;
+        }
     }
 
     &__inner,
@@ -44,6 +49,15 @@
         flex-wrap: wrap;
         align-items: center;
         row-gap: 128px;
+
+        @include for-tablet {
+            row-gap: 50px;
+            text-align: center;
+        }
+
+        @media (max-width: 306px) {
+            flex-direction: column;
+        }
     }
 
     &__brand {
