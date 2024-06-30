@@ -1,0 +1,62 @@
+.team {
+    &__wrapper {
+        display: flex;
+        gap: 37px;
+
+        @include for-tablet {
+            flex-direction: column;
+        }
+    }
+
+    &__title {
+        color: rgb(64, 62, 59);
+        font-size: 32px;
+        line-height: 38px;
+        letter-spacing: 0%;
+        padding-bottom: 14px;
+    }
+
+    &__text {
+        color: rgb(100, 92, 85);
+        font-size: 15px;
+        line-height: 24px;
+        letter-spacing: 0%;
+    }
+
+    &__inner {
+        flex: 0 0 30%;
+    }
+
+    &__pics {
+        flex: 0 0 70%;
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 52px;
+
+        @media (max-width: 525px) {
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+
+    &__data-container {
+        flex: 0 0 50%;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+
+    &__name {
+        color: rgb(27, 26, 26);
+        font-size: 17px;
+        line-height: 26px;
+        letter-spacing: 0%;
+    }
+
+    &__position {
+        color: rgb(100, 92, 85);
+        font-size: 14px;
+        line-height: 14px;
+        letter-spacing: 0%;
+    }
+}

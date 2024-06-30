@@ -2,9 +2,8 @@
     background-image: url("../images/image-4.png");
     background-repeat: no-repeat;
     display: flex;
+    background-size: cover;
     align-items: center;
-    border-left: none;
-    border-right: none;
     height: 600px;
 
     &__wrapper {
