@@ -1134,7 +1134,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: "Poppins";
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1542,6 +1542,50 @@ a {
   line-height: 24px;
 }
 
+.about__wrapper {
+  display: flex;
+  gap: 133px;
+  justify-content: center;
+}
+
+.about__title {
+  color: #403e3b;
+  font-size: 32px;
+}
+
+.about__text {
+  max-width: 493px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  padding-bottom: 10px;
+}
+
+.about__ceo {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding-top: 8px;
+}
+
+.about__imageline {
+  border-style: dashed;
+  border: 3px dashed #cec4bc;
+}
+
+.about__name {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #1b1a1a;
+}
+
+.about__position {
+  color: #645c55;
+  font-size: 14px;
+}
+
 @media (max-width: 1280px) {
   .container {
     width: 992px;
@@ -1576,6 +1620,15 @@ a {
   .main__title {
     font-size: 44px;
     line-height: 50.4px;
+  }
+
+  .about__wrapper {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .about__text {
+    max-width: 100%;
   }
 }
 
