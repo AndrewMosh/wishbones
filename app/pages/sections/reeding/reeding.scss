@@ -4,6 +4,9 @@
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
+    border: 3px dashed rgb(206, 196, 188);
+    border-left: none;
+    border-right: none;
 
     &__wrapper {
         display: flex;
