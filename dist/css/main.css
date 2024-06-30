@@ -1569,11 +1569,6 @@ a {
   padding-top: 8px;
 }
 
-.about__imageline {
-  border-style: dashed;
-  border: 3px dashed #cec4bc;
-}
-
 .about__name {
   font-size: 17px;
   font-weight: 400;
@@ -1587,14 +1582,13 @@ a {
 }
 
 .reeding {
-  height: 70vh;
   background-image: url("../images/image-4.png");
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
-  border: 3px dashed #cec4bc;
   border-left: none;
   border-right: none;
+  height: 600px;
 }
 
 .reeding__wrapper {
@@ -1660,10 +1654,6 @@ a {
   text-align: center;
 }
 
-.proccess__stage-image {
-  border: 3px dashed #cec4bc;
-}
-
 .proccess__stage-title {
   color: #403e3b;
   font-size: 17px;
@@ -1673,6 +1663,93 @@ a {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
+}
+
+.staircase {
+  height: 600px;
+  background-image: url("../images/staircase.png");
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  border-left: none;
+  border-right: none;
+}
+
+.staircase__wrapper {
+  display: flex;
+  justify-content: end;
+}
+
+.staircase__inner {
+  max-width: 285px;
+}
+
+.staircase__title {
+  color: #403e3b;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.staircase__text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+}
+
+.customers {
+  background-color: #403e3b;
+  color: #ffffff;
+}
+
+.customers__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.customers__inner,
+.customers__brands {
+  flex: 0 0 50%;
+}
+
+.customers__title {
+  color: #ece7e4;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.customers__credo {
+  color: white;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 38px;
+  letter-spacing: 0%;
+  padding-bottom: 15px;
+}
+
+.customers__text {
+  color: #ece7e4;
+  max-width: 451px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+}
+
+.customers__brands {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  row-gap: 128px;
+}
+
+.customers__brand {
+  flex: 0 0 50%;
 }
 
 @media (max-width: 1280px) {

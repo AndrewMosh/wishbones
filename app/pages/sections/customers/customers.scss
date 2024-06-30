@@ -1,0 +1,52 @@
+.customers {
+    background-color: $bgColor2;
+    color: $white;
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+    }
+
+    &__inner,
+    &__brands {
+        flex: 0 0 50%;
+    }
+
+    &__title {
+        color: $textColor2;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+
+    &__credo {
+        color: rgb(255, 255, 255);
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 38px;
+        letter-spacing: 0%;
+        padding-bottom: 15px;
+    }
+
+    &__text {
+        color: $textColor2;
+        max-width: 451px;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0%;
+    }
+
+    &__brands {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        row-gap: 128px;
+    }
+
+    &__brand {
+        flex: 0 0 50%;
+    }
+}

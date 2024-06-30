@@ -1,11 +1,11 @@
-.reeding {
-    background-image: url("../images/image-4.png");
+.staircase {
+    height: 600px;
+    background-image: url("../images/staircase.png");
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
     border-left: none;
     border-right: none;
-    height: 600px;
 
     &__wrapper {
         display: flex;
