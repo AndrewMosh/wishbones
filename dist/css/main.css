@@ -1586,6 +1586,38 @@ a {
   font-size: 14px;
 }
 
+.reeding {
+  height: 70vh;
+  background-image: url("../images/image-4.png");
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+
+.reeding__wrapper {
+  display: flex;
+  justify-content: end;
+}
+
+.reeding__inner {
+  max-width: 285px;
+}
+
+.reeding__title {
+  color: #403e3b;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.reeding__text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+}
+
 @media (max-width: 1280px) {
   .container {
     width: 992px;
