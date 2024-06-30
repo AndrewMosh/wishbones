@@ -1,0 +1,43 @@
+.footer {
+    background-color: $bgColor4;
+    padding: 60px 0;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include for-mobile {
+            flex-direction: column;
+            gap: 20px;
+            align-items: flex-start;
+        }
+    }
+
+    &__logo {
+        font-size: 30px;
+        color: $black;
+        padding-bottom: 20px;
+
+        @include for-mobile {
+            font-size: 20px;
+        }
+
+        span {
+            font-weight: bold;
+        }
+    }
+
+    &__text {
+        color: rgb(100, 92, 85);
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0%;
+        max-width: 300px;
+    }
+
+    &__button {
+        background: none;
+        cursor: pointer;
+    }
+}
