@@ -1,0 +1,43 @@
+.promo {
+    background-color: $bgColor3;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+
+        @include for-tablet {
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+
+    &__title {
+        color: rgb(100, 92, 85);
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+
+    &__text {
+        color: rgb(27, 26, 26);
+        font-size: 40px;
+        line-height: 42px;
+        letter-spacing: 0%;
+        max-width: 569px;
+
+        @include for-mobile {
+            flex-direction: column;
+            font-size: 30px;
+        }
+    }
+
+    &__button {
+        background: none;
+        cursor: pointer;
+        color: rgb(27, 26, 26);
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.4px;
+    }
+}

@@ -1939,6 +1939,40 @@ a {
   letter-spacing: 0%;
 }
 
+.promo {
+  background-color: #cec4bc;
+}
+
+.promo__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.promo__title {
+  color: #645c55;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.promo__text {
+  color: #1b1a1a;
+  font-size: 40px;
+  line-height: 42px;
+  letter-spacing: 0%;
+  max-width: 569px;
+}
+
+.promo__button {
+  background: none;
+  cursor: pointer;
+  color: #1b1a1a;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.4px;
+}
+
 @media (max-width: 1280px) {
   .container {
     width: 992px;
@@ -2025,6 +2059,11 @@ a {
 
   .team__wrapper {
     flex-direction: column;
+  }
+
+  .promo__wrapper {
+    flex-direction: column;
+    gap: 20px;
   }
 }
 
@@ -2202,6 +2241,11 @@ a {
 
   .projects__viewall {
     margin-top: 23px;
+  }
+
+  .promo__text {
+    flex-direction: column;
+    font-size: 30px;
   }
 }
 
