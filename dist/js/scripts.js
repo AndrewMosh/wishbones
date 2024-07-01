@@ -9,6 +9,16 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./app/scripts/href.ts":
+/*!*****************************!*\
+  !*** ./app/scripts/href.ts ***!
+  \*****************************/
+/***/ (() => {
+
+eval("(function () {\n    var links = document.querySelectorAll('a[href*=\"#\"]');\n    if (links.length <= 0)\n        return;\n    var marginTop = 100;\n    if (window.innerWidth <= 768)\n        marginTop = 80;\n    window.addEventListener(\"resize\", function () {\n        if (window.innerWidth <= 768) {\n            marginTop = 80;\n        }\n    });\n    links.forEach(function (link) {\n        link.addEventListener(\"click\", function (e) {\n            var blockID = link.getAttribute(\"href\").substr(1);\n            if (blockID && blockID !== \"\") {\n                var elem = document.querySelector(\"#\".concat(blockID));\n                if (elem) {\n                    e.preventDefault();\n                    window.scrollBy({\n                        top: elem.getBoundingClientRect().top - marginTop,\n                        left: 0,\n                        behavior: \"smooth\",\n                    });\n                }\n            }\n        });\n    });\n})();\n\n\n//# sourceURL=webpack://gulp-v5-starter/./app/scripts/href.ts?");
+
+/***/ }),
+
 /***/ "./app/scripts/main.ts":
 /*!*****************************!*\
   !*** ./app/scripts/main.ts ***!
@@ -16,7 +26,7 @@
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _swiper_ts__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./swiper.ts */ \"./app/scripts/swiper.ts\");\n/* harmony import */ var _menu_ts__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./menu.ts */ \"./app/scripts/menu.ts\");\n/* harmony import */ var _menu_ts__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_menu_ts__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\n\n//# sourceURL=webpack://gulp-v5-starter/./app/scripts/main.ts?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _swiper_ts__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./swiper.ts */ \"./app/scripts/swiper.ts\");\n/* harmony import */ var _menu_ts__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./menu.ts */ \"./app/scripts/menu.ts\");\n/* harmony import */ var _menu_ts__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_menu_ts__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _href_ts__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./href.ts */ \"./app/scripts/href.ts\");\n/* harmony import */ var _href_ts__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_href_ts__WEBPACK_IMPORTED_MODULE_2__);\n\n\n\n\n\n//# sourceURL=webpack://gulp-v5-starter/./app/scripts/main.ts?");
 
 /***/ }),
 
