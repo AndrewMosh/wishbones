@@ -2,6 +2,11 @@
     background-color: $bgColor3;
     display: flex;
     align-items: center;
+    padding: 200px 0;
+
+    @media (max-width: 600px) {
+        padding: 100px 0;
+    }
 
     &__wrapper {
         display: flex;

@@ -1,5 +1,5 @@
 .main {
-    padding: 0;
+    padding-top: 70px;
     background-color: $bgColor1;
 
     &__wrapper {
@@ -21,6 +21,7 @@
 
     &__image {
         flex: 0 0 58%;
+        padding-top: 3px;
     }
 
     &__logo {
