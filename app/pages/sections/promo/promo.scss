@@ -1,5 +1,7 @@
 .promo {
     background-color: $bgColor3;
+    display: flex;
+    align-items: center;
 
     &__wrapper {
         display: flex;

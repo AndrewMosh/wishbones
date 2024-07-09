@@ -1,15 +1,60 @@
 @@include('./elements/head.html')
 @@include('./elements/header.html')
-@@include('./sections/main/main.html')
-@@include('./sections/about/about.html')
-@@include('./sections/reeding/reeding.html')
-@@include('./sections/proccess/proccess.html')
-@@include('./sections/staircase/staircase.html')
-@@include('./sections/customers/customers.html')
-@@include('./sections/swirling/swirling.html')
-@@include('./sections/projects/projects.html')
-@@include('./sections/team/team.html')
-@@include('./sections/promo/promo.html')
-@@include('./elements/footer.html')
+<div class="slides-wrapper">
+    <section class="panel">
+        <div class="panel-content">
+            @@include('./sections/main/main.html')
+        </div>
+    </section>
+    <section class="panel section-2">
+        <div class="panel-content height">
+            <div class="dd">
+                @@include('./sections/about/about.html')
+            </div>
+        </div>
+    </section>
+    <section class="panel section-3">
+        <div class="panel-content">
+            @@include('./sections/reeding/reeding.html')
+        </div>
+    </section>
+    <section class="panel">
+        <div class="panel-content">
+            @@include('./sections/proccess/proccess.html')
+        </div>
+    </section>
 
+    <section class="panel">
+        <div class="panel-content">
+            @@include('./sections/staircase/staircase.html')
+        </div>
+    </section>
+    <section class="panel">
+        <div class="panel-content">
+            @@include('./sections/customers/customers.html')
+        </div>
+    </section>
+    <section class="panel">
+        <div class="panel-content">
+            @@include('./sections/swirling/swirling.html')
+        </div>
+    </section>
+
+    <section class="panel">
+        <div class="panel-content">
+            @@include('./sections/projects/projects.html')
+        </div>
+    </section>
+    <section class="panel">
+        <div class="panel-content">
+            @@include('./sections/team/team.html')
+        </div>
+    </section>
+    <section class="panel">
+        <div class="panel-content">
+            @@include('./sections/promo/promo.html')
+        </div>
+    </section>
+</div>
+@@include('./elements/footer.html')
 @@include('./elements/scripts.html')

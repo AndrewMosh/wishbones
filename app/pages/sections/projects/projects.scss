@@ -1,5 +1,7 @@
 .projects {
     background-color: rgb(247, 247, 247);
+    display: flex;
+    align-items: center;
 
     &__wrapper {
         display: flex;

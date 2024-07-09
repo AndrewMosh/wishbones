@@ -1,6 +1,8 @@
 .customers {
     background-color: $bgColor2;
     color: $white;
+    display: flex;
+    align-items: center;
 
     &__wrapper {
         display: flex;
